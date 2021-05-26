@@ -1,0 +1,230 @@
+* {margin: 0;}
+
+body {
+    background-image: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+button {
+    background-color: rgb(64, 36, 143);
+    border-width: 4px;
+    border-color: rgb(44, 11, 134);
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#MS {
+    position: fixed;
+    padding: 100%;
+    background-color: rgb(17, 102, 158);
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+#ms2 {
+    position: fixed;
+    padding: 300px;
+    z-index: 2;
+    top: 0px;
+    left: 150px;
+}
+
+#msRest {
+
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+    padding-bottom: 100%;
+    padding-right: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+
+#error {
+
+    position: fixed;
+    background-color: black;
+    z-index: 2;
+    padding-bottom: 100%;
+    padding-right: 100%;
+    top: 0px;
+    left: 0px;
+
+}
+
+#errorM {
+    position: absolute;
+    width: 1400px;
+    height: 100px;
+    z-index: 3;
+    color: white;
+    padding: 300px;
+    top: 100px;
+    font-size: 60px;
+
+}
+
+#divinfo {
+    position: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-top: 200px;
+    background-color: rgba(125, 133, 133, 0.849);
+    border-style: dashed;
+    border-color: rgba(104, 9, 9, 0.801);
+    z-index: 2;
+    top: 100px;
+    left: 800px ;
+}
+
+#logo1 {
+    width: 100%;
+    height: 100%;
+}
+
+#showcase {
+    position: absolute;
+    top: 550px;
+    left: 875px
+}
+
+#sidebar1 {
+    z-index: 1;
+    position: fixed;
+    height: 500px;
+    width: 300px;
+    top: 0;
+    left: 85%;
+    object-fit: cover;
+    background-image: url("img/blankmap.png");
+    
+}
+
+#creature--info {
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 45px;
+    font-family: fantasy;
+    padding-top: 50px;
+    list-style: none;
+
+}
+
+#wakiwaki {
+
+    position: fixed;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    top: 500px;
+    left: 890px;
+
+}
+
+#droper {
+
+    position: absolute;
+    display: inline-block;
+    bottom: 0px;
+
+}
+
+#droper-content {
+
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    bottom: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(44, 11, 134);
+
+}
+
+#droper:hover #droper-content {
+
+    display: block;
+
+}
+
+
+/*grid*/
+
+.grid--game {
+    display: grid;
+    grid-template-areas: 
+        "button p button2"
+    ;
+
+    grid-template-rows: 2fr;
+    grid-column: 1fr 4fr 1fr;
+    margin: 250px;
+    padding-left: 80px;
+    
+
+}
+
+.button--rest {
+    position: relative;
+    grid-area: button;
+    align-self: center;
+    margin: 100px;
+    padding: 0px;
+    font-size: 40px;
+    width: 156px;
+    height:  142px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button--explore {
+    position: relative;
+    grid-area: button2;
+    text-align: center;
+    line-height: 1em;
+    margin: 100px;
+    padding: 0px;
+    font-size: 40px;
+    width: 156px;
+    height:  142px;
+    top: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.game--p {
+    position: relative;
+    grid-area: p;
+    text-align: center;
+    line-height: 1em;
+    margin: 100px;
+    padding-top:40px;
+    font-size: 20px;
+    color: rgb(182, 200, 216);
+    width: 156px;
+    height:  142px;
+
+}
+
+.game--p::before {
+    content:"";
+    position: absolute;
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    z-index: -1;
+    left: -25px;
+    top: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(44, 11, 134);
+    
+}
+
